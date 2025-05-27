@@ -1,0 +1,187 @@
+/*
+	===============================
+			@Import	Function
+	===============================
+*/
+/*
+	===============================
+			@Import	Mixins
+	===============================
+*/
+.calendar-container {
+  padding: 30px 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #e0e6ed;
+  box-shadow: 0 0 40px 0 rgba(94, 92, 154, 0.06);
+}
+
+.fc .fc-button-primary {
+  background-color: #eceffe;
+  border-color: #e0e6ed;
+  letter-spacing: 1px;
+  font-size: 14px;
+  color: #191e3a;
+}
+.fc .fc-button-primary:not(:disabled).fc-button-active {
+  background-color: #009bde;
+  font-weight: 900;
+  border-color: #e0e6ed;
+}
+.fc .fc-button-primary:hover, .fc .fc-button-primary:not(:disabled):active {
+  background-color: #e0e6ed;
+  color: #3b3f5c;
+  border-color: #e0e6ed;
+}
+.fc .fc-button-primary:focus, .fc .fc-button-primary:active:focus {
+  box-shadow: none !important;
+}
+.fc .fc-list-sticky .fc-list-day > * {
+  background-color: #fff;
+}
+
+.fc-theme-standard .fc-list-day-cushion {
+  background-color: #fff;
+}
+.fc-theme-standard .fc-list {
+  border: 1px solid #e0e6ed;
+}
+
+.fc .fc-button {
+  border-radius: 8px;
+  padding: 7px 20px;
+  text-transform: capitalize;
+}
+.fc .fc-addEventButton-button {
+  background-color: #00466a;
+  border-color: #00466a;
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 10px 20px -10px rgba(192, 0, 0, 0.59);
+}
+.fc .fc-addEventButton-button:hover, .fc .fc-addEventButton-button:not(:disabled):active {
+  background-color: #00466a;
+  border-color: #00466a;
+  box-shadow: none;
+  color: #fff;
+}
+
+.fc-theme-standard .fc-scrollgrid, .fc-theme-standard td, .fc-theme-standard th {
+  border: 1px solid #e0e6ed;
+}
+
+.fc-v-event .fc-event-main {
+  color: #3b3f5c;
+}
+
+.fc-timegrid-event-harness-inset .fc-timegrid-event, .fc-timegrid-event.fc-event-mirror, .fc-timegrid-more-link {
+  box-shadow: none;
+}
+
+.event-fc-color {
+  background-color: #1b2e4b;
+  border: none;
+  padding: 4px 10px;
+  margin-bottom: 1px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  cursor: pointer;
+}
+.event-fc-color:hover {
+  background-color: #f1f2f3;
+}
+
+.fc .fc-daygrid-day.fc-day-today {
+  background-color: transparent;
+  padding: 3px;
+  border-radius: 23px;
+}
+.fc .fc-daygrid-day.fc-day-today .fc-daygrid-day-frame {
+  background-color: #eaeaec;
+  border-radius: 8px;
+}
+.fc .fc-daygrid-day.fc-day-today .fc-daygrid-day-frame .fc-daygrid-day-number {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.fc-daygrid-event-dot {
+  margin: 0 6px 0 0;
+}
+
+.fc-bg-primary {
+  color: #00466a;
+  background-color: rgba(67, 97, 238, 0.15);
+}
+.fc-bg-primary.fc-h-event .fc-event-main {
+  color: #00466a;
+}
+
+.fc-bg-success {
+  color: #00ab55;
+  background-color: rgba(26, 188, 156, 0.15);
+}
+.fc-bg-success.fc-h-event .fc-event-main {
+  color: #00ab55;
+}
+
+.fc-bg-warning {
+  color: #e2a03f;
+  background-color: rgba(226, 160, 63, 0.15);
+}
+.fc-bg-warning.fc-h-event .fc-event-main {
+  color: #e2a03f;
+}
+
+.fc-bg-danger {
+  color: #e7515a;
+  background-color: rgba(231, 81, 90, 0.15);
+}
+.fc-bg-danger.fc-h-event .fc-event-main {
+  color: #e7515a;
+}
+
+.fc-bg-primary .fc-daygrid-event-dot {
+  border-color: #00466a;
+}
+
+.fc-bg-success .fc-daygrid-event-dot {
+  border-color: #00ab55;
+}
+
+.fc-bg-warning .fc-daygrid-event-dot {
+  border-color: #e2a03f;
+}
+
+.fc-bg-danger .fc-daygrid-event-dot {
+  border-color: #e7515a;
+}
+
+.fc .fc-list-event:hover td {
+  background-color: #f1f2f3;
+}
+
+/* Modal CSS */
+.btn-update-event {
+  display: none;
+}
+
+@media (max-width: 1199px) {
+  .calendar-container {
+    padding: 30px 0 0 0;
+  }
+  .fc-theme-standard .fc-list {
+    border: none;
+  }
+  .fc .fc-toolbar {
+    align-items: center;
+    flex-direction: column;
+  }
+  .fc-toolbar-chunk:not(:first-child) {
+    margin-top: 35px;
+  }
+  .fc .fc-toolbar.fc-header-toolbar {
+    margin-bottom: 50px;
+  }
+}

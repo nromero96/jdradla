@@ -1,0 +1,164 @@
+/*
+	===============================
+			@Import	Function
+	===============================
+*/
+/*
+	===============================
+			@Import	Mixins
+	===============================
+*/
+body.dark .calendar-container {
+  padding: 30px 30px;
+  background-color: #0e1726;
+  box-shadow: 0 0 40px 0 rgba(94, 92, 154, 0.06);
+  border-radius: 8px;
+  border: 1px solid #0e1726;
+}
+body.dark .fc .fc-button-primary {
+  background-color: #1b2e4b;
+  border-color: #1b2e4b;
+  letter-spacing: 1px;
+  font-size: 14px;
+  color: #fff;
+}
+body.dark .fc .fc-button-primary:not(:disabled).fc-button-active {
+  background-color: #004889;
+  font-weight: 900;
+  border-color: #1b2e4b;
+}
+body.dark .fc .fc-button-primary:hover, body.dark .fc .fc-button-primary:not(:disabled):active {
+  background-color: #191e3a;
+  color: #fff;
+  border-color: #1b2e4b;
+}
+body.dark .fc .fc-button-primary:focus, body.dark .fc .fc-button-primary:active:focus {
+  box-shadow: none !important;
+}
+body.dark .fc .fc-list-sticky .fc-list-day > * {
+  background-color: #0e1726;
+}
+body.dark .fc-theme-standard .fc-list-day-cushion {
+  background-color: #0e1726;
+}
+body.dark .fc-theme-standard .fc-list {
+  border: 1px solid #3b3f5c;
+}
+body.dark .fc .fc-button {
+  border-radius: 8px;
+  padding: 7px 20px;
+  text-transform: capitalize;
+}
+body.dark .fc .fc-addEventButton-button {
+  background-color: #c00000;
+  border-color: #c00000;
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 10px 20px -10px rgba(27, 85, 226, 0.59);
+}
+body.dark .fc .fc-addEventButton-button:hover, body.dark .fc .fc-addEventButton-button:not(:disabled):active {
+  background-color: #c00000;
+  border-color: #c00000;
+  box-shadow: none;
+}
+body.dark .fc-theme-standard .fc-scrollgrid, body.dark .fc-theme-standard td, body.dark .fc-theme-standard th {
+  border: 1px solid #3b3f5c;
+}
+body.dark .fc-timegrid-event-harness-inset .fc-timegrid-event, body.dark .fc-timegrid-event.fc-event-mirror, body.dark .fc-timegrid-more-link {
+  box-shadow: none;
+}
+body.dark .event-fc-color {
+  background-color: #1b2e4b;
+  border: none;
+  padding: 4px 10px;
+  margin-bottom: 1px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  cursor: pointer;
+}
+body.dark .event-fc-color:hover {
+  background-color: #060818;
+}
+body.dark .fc .fc-daygrid-day.fc-day-today {
+  background-color: transparent;
+  padding: 3px;
+  border-radius: 23px;
+}
+body.dark .fc .fc-daygrid-day.fc-day-today .fc-daygrid-day-frame {
+  background-color: #1b2e4b;
+  border-radius: 8px;
+}
+body.dark .fc .fc-daygrid-day.fc-day-today .fc-daygrid-day-frame .fc-daygrid-day-number {
+  font-size: 15px;
+  font-weight: 800;
+}
+body.dark .fc-daygrid-event-dot {
+  margin: 0 6px 0 0;
+}
+body.dark .fc-bg-primary {
+  color: #c00000;
+  background-color: rgba(67, 97, 238, 0.15);
+}
+body.dark .fc-bg-primary.fc-h-event .fc-event-main {
+  color: #c00000;
+}
+body.dark .fc-bg-success {
+  color: #00ab55;
+  background-color: rgba(26, 188, 156, 0.15);
+}
+body.dark .fc-bg-success.fc-h-event .fc-event-main {
+  color: #00ab55;
+}
+body.dark .fc-bg-warning {
+  color: #e2a03f;
+  background-color: rgba(226, 160, 63, 0.15);
+}
+body.dark .fc-bg-warning.fc-h-event .fc-event-main {
+  color: #e2a03f;
+}
+body.dark .fc-bg-danger {
+  color: #e7515a;
+  background-color: rgba(231, 81, 90, 0.15);
+}
+body.dark .fc-bg-danger.fc-h-event .fc-event-main {
+  color: #e7515a;
+}
+body.dark .fc-bg-primary .fc-daygrid-event-dot {
+  border-color: #c00000;
+}
+body.dark .fc-bg-success .fc-daygrid-event-dot {
+  border-color: #00ab55;
+}
+body.dark .fc-bg-warning .fc-daygrid-event-dot {
+  border-color: #e2a03f;
+}
+body.dark .fc-bg-danger .fc-daygrid-event-dot {
+  border-color: #e7515a;
+}
+body.dark .fc .fc-list-event:hover td {
+  background-color: #060818;
+}
+
+/* Modal CSS */
+body.dark .btn-update-event {
+  display: none;
+}
+@media (max-width: 1199px) {
+  body.dark .calendar-container {
+    padding: 30px 0 0 0;
+  }
+  body.dark .fc-theme-standard .fc-list {
+    border: none;
+  }
+  body.dark .fc .fc-toolbar {
+    align-items: center;
+    flex-direction: column;
+  }
+  body.dark .fc-toolbar-chunk:not(:first-child) {
+    margin-top: 35px;
+  }
+  body.dark .fc .fc-toolbar.fc-header-toolbar {
+    margin-bottom: 50px;
+  }
+}

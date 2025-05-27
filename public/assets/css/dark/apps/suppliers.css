@@ -1,0 +1,433 @@
+/*
+	===============================
+			@Import	Function
+	===============================
+*/
+/*
+	===============================
+			@Import	Mixins
+	===============================
+*/
+/*----------Theme checkbox---------*/
+/*
+  Filtered List Search
+*/
+body.dark .bg-text-control-form {
+  background-color: #191e3a;
+}
+body.dark .bg-file-cocuments {
+  background-repeat: no-repeat;
+  background-position-x: -10px;
+  background-blend-mode: soft-light;
+}
+body.dark .card .remove_contact {
+  width: 20px;
+  position: absolute;
+  margin-top: -5px;
+  margin-left: -5px;
+  border-radius: 7px 0px 3px 1px;
+}
+body.dark .card .remove_route {
+  width: 20px;
+  position: absolute;
+  margin-top: -5px;
+  margin-left: -5px;
+  border-radius: 7px 0px 3px 1px;
+}
+body.dark .rating-group input[type=radio] {
+  display: none;
+}
+body.dark .rating-group label {
+  display: inline-block;
+  cursor: pointer;
+  color: #ccc;
+}
+body.dark .rating-group label svg {
+  color: #e2a03f;
+  stroke-width: 1px;
+  fill: none;
+}
+body.dark .rating-group label.active svg {
+  fill: #e2a03f;
+  color: #e2a03f;
+  stroke-width: 0;
+}
+body.dark .filtered-list-search form > div {
+  position: relative;
+  width: 80%;
+}
+body.dark .filtered-list-search form > div svg {
+  position: absolute;
+  right: 11px;
+  color: #e0e6ed;
+  height: 36px;
+  width: 19px;
+  top: 5px;
+}
+body.dark .filtered-list-search form input {
+  border: none;
+  width: 100% !important;
+}
+body.dark .filtered-list-search form input:focus {
+  border-color: #d3d3d3;
+}
+body.dark .filtered-list-search form input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #888ea8;
+}
+body.dark .filtered-list-search form input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #888ea8;
+}
+body.dark .filtered-list-search form input:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #888ea8;
+}
+body.dark .filtered-list-search form input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #888ea8;
+}
+body.dark .searchable-container .switch {
+  text-align: right;
+}
+body.dark .searchable-container .switch .view-grid, body.dark .searchable-container .switch .view-list {
+  padding: 10px;
+  background: #1b2e4b;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #888ea8;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+  width: 43px;
+  height: 41px;
+  fill: rgba(0, 23, 55, 0.08);
+  border: 1px solid #1b2e4b;
+}
+body.dark .searchable-container #btn-add-contact {
+  padding: 9px;
+  background: #1b2e4b;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 35px;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+  width: 43px;
+  height: 41px;
+  color: #009688;
+  fill: rgba(27, 85, 226, 0.2392156863);
+  border: 1px solid #1b2e4b;
+}
+body.dark .searchable-container #btn-add-contact:hover {
+  color: #888ea8;
+  fill: rgba(0, 23, 55, 0.08);
+}
+body.dark .searchable-container .add-contact-box .add-contact-content .contact-name .validation-text, body.dark .searchable-container .add-contact-box .add-contact-content .contact-email .validation-text, body.dark .searchable-container .add-contact-box .add-contact-content .contact-occupation .validation-text, body.dark .searchable-container .add-contact-box .add-contact-content .contact-phone .validation-text, body.dark .searchable-container .add-contact-box .add-contact-content .contact-location .validation-text {
+  display: none;
+  color: #e7515a;
+  font-weight: 600;
+  text-align: left;
+  margin-top: 6px;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+body.dark .searchable-container .add-contact-box .add-contact-content .contact-name svg, body.dark .searchable-container .add-contact-box .add-contact-content .contact-email svg, body.dark .searchable-container .add-contact-box .add-contact-content .contact-occupation svg, body.dark .searchable-container .add-contact-box .add-contact-content .contact-phone svg, body.dark .searchable-container .add-contact-box .add-contact-content .contact-location svg {
+  align-self: center;
+  font-size: 19px;
+  margin-right: 14px;
+  color: #2196f3;
+  font-weight: 600;
+}
+body.dark .searchable-container .add-contact-box .add-contact-content .contact-name #c-name::-webkit-input-placeholder, body.dark .searchable-container .add-contact-box .add-contact-content .contact-email #c-email::-webkit-input-placeholder, body.dark .searchable-container .add-contact-box .add-contact-content .contact-occupation #c-occupation::-webkit-input-placeholder, body.dark .searchable-container .add-contact-box .add-contact-content .contact-phone #c-phone::-webkit-input-placeholder, body.dark .searchable-container .add-contact-box .add-contact-content .contact-location #c-location::-webkit-input-placeholder, body.dark .searchable-container .add-contact-box .add-contact-content .contact-name #c-name::-ms-input-placeholder, body.dark .searchable-container .add-contact-box .add-contact-content .contact-email #c-email::-ms-input-placeholder, body.dark .searchable-container .add-contact-box .add-contact-content .contact-occupation #c-occupation::-ms-input-placeholder, body.dark .searchable-container .add-contact-box .add-contact-content .contact-phone #c-phone::-ms-input-placeholder, body.dark .searchable-container .add-contact-box .add-contact-content .contact-location #c-location::-ms-input-placeholder, body.dark .searchable-container .add-contact-box .add-contact-content .contact-name #c-name::-moz-input-placeholder, body.dark .searchable-container .add-contact-box .add-contact-content .contact-email #c-email::-moz-input-placeholder, body.dark .searchable-container .add-contact-box .add-contact-content .contact-occupation #c-occupation::-moz-input-placeholder, body.dark .searchable-container .add-contact-box .add-contact-content .contact-phone #c-phone::-moz-input-placeholder {
+  color: #181e2e;
+  font-weight: 600;
+}
+body.dark .searchable-container .add-contact-box .add-contact-content .contact-location #c-location {
+  resize: none;
+}
+body.dark .searchable-container .add-contact-box .add-contact-content .contact-location #c-location::-moz-input-placeholder {
+  color: #181e2e;
+  font-weight: 600;
+}
+body.dark .searchable-container .switch .view-grid:hover, body.dark .searchable-container .switch .view-list:hover, body.dark .searchable-container .switch .active-view {
+  color: #009688;
+  fill: rgba(27, 85, 226, 0.2392156863);
+}
+body.dark .searchable-container .searchable-items.list .items.items-header-section h4 {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0;
+  margin-left: 39px;
+  color: #bfc9d4;
+}
+body.dark .searchable-container .searchable-items.list .items.items-header-section .n-chk {
+  display: inline-block;
+}
+body.dark .searchable-container .searchable-items.list .items .item-content {
+  flex-direction: row;
+  align-items: center;
+  padding: 0.75rem 0.625rem;
+  position: relative;
+  display: inline-flex;
+  min-width: 0;
+  word-wrap: break-word;
+  justify-content: space-between;
+  background: #0e1726;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  padding: 13px 18px;
+  width: 100%;
+  min-width: 767px;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+  border: 1px solid #1b2e4b;
+}
+body.dark .searchable-container .searchable-items.list .items .item-content:hover {
+  background: #060818;
+}
+body.dark .searchable-container .searchable-items.list .items .item-content:hover .action-btn .edit {
+  color: #00ab55;
+  fill: none;
+}
+body.dark .searchable-container .searchable-items.list .items .item-content:hover .action-btn .delete {
+  color: #e7515a;
+  fill: none;
+}
+body.dark .searchable-container .searchable-items.list .items .item-content:hover .user-meta-info .user-name, body.dark .searchable-container .searchable-items.list .items .item-content:hover .user-email p, body.dark .searchable-container .searchable-items.list .items .item-content:hover .user-location p, body.dark .searchable-container .searchable-items.list .items .item-content:hover .user-phone p {
+  color: #2196f3;
+}
+body.dark .searchable-container .searchable-items.list .items .user-profile {
+  display: flex;
+}
+body.dark .searchable-container .searchable-items.list .items .user-profile img {
+  width: 43px;
+  height: 43px;
+  border-radius: 8px;
+  margin-right: 11px;
+  margin-left: 18px;
+}
+body.dark .searchable-container .searchable-items.list .items .user-meta-info .user-name {
+  margin-bottom: 0;
+  color: #bfc9d4;
+  font-weight: 600;
+  font-size: 15px;
+}
+body.dark .searchable-container .searchable-items.list .items .user-meta-info .user-work {
+  margin-bottom: 0;
+  color: #888ea8;
+  font-weight: 500;
+  font-size: 13px;
+}
+body.dark .searchable-container .searchable-items.list .items .user-email p {
+  margin-bottom: 0;
+  color: #888ea8;
+  font-weight: 600;
+}
+body.dark .searchable-container .searchable-items.list .items .user-email .info-title {
+  display: none;
+}
+body.dark .searchable-container .searchable-items.list .items .user-location p {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+body.dark .searchable-container .searchable-items.list .items .user-location .info-title {
+  display: none;
+}
+body.dark .searchable-container .searchable-items.list .items .user-phone p {
+  margin-bottom: 0;
+  color: #888ea8;
+  font-weight: 600;
+  font-size: 13px;
+}
+body.dark .searchable-container .searchable-items.list .items .user-phone .info-title {
+  display: none;
+}
+body.dark .searchable-container .searchable-items.list .items .action-btn {
+  font-weight: 600;
+  color: #181e2e;
+}
+body.dark .searchable-container .searchable-items.list .items .action-btn .delete-multiple {
+  margin-right: 5px;
+  cursor: pointer;
+  color: #e7515a;
+  width: 20px;
+  fill: none;
+}
+body.dark .searchable-container .searchable-items.list .items .action-btn .delete-multiple:hover {
+  color: #009688;
+}
+body.dark .searchable-container .searchable-items.list .items .action-btn .show, body.dark .searchable-container .searchable-items.list .items .action-btn .edit, body.dark .searchable-container .searchable-items.list .items .action-btn .delete {
+  margin-right: 5px;
+  cursor: pointer;
+  color: #bfc9d4;
+  width: 20px;
+  fill: rgba(27, 85, 226, 0.2392156863);
+}
+body.dark .searchable-items.grid {
+  display: flex;
+  flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+body.dark .searchable-container .searchable-items.grid .items {
+  margin-bottom: 30px;
+  border-radius: 6px;
+  width: 100%;
+  color: #0e1726;
+  width: 33%;
+  flex: 0 0 25%;
+  max-width: 25%;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+body.dark .searchable-container .searchable-items.grid .items .item-content {
+  background-color: #0e1726;
+  padding: 13px 18px;
+  border-radius: 6px;
+  border: 1px solid #0e1726;
+}
+body.dark .searchable-container .searchable-items.grid .items .item-content:hover {
+  background: #060818;
+}
+body.dark .searchable-container .searchable-items.grid .items .item-content:hover .action-btn .edit {
+  color: #00ab55;
+  fill: none;
+}
+body.dark .searchable-container .searchable-items.grid .items .item-content:hover .action-btn .delete {
+  color: #e7515a;
+  fill: none;
+}
+body.dark .searchable-container .searchable-items.grid .items.items-header-section {
+  display: none;
+}
+body.dark .searchable-container .searchable-items.grid .items .user-profile {
+  text-align: center;
+  margin-top: 20px;
+}
+body.dark .searchable-container .searchable-items.grid .items .user-profile .n-chk {
+  display: none;
+}
+body.dark .searchable-container .searchable-items.grid .items .user-profile img {
+  border-radius: 12px;
+}
+body.dark .searchable-container .searchable-items.grid .items .user-meta-info {
+  margin-top: 10px;
+}
+body.dark .searchable-container .searchable-items.grid .items .user-meta-info .user-name {
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: #009688;
+}
+body.dark .searchable-container .searchable-items.grid .items .user-meta-info .user-work {
+  font-weight: 700;
+  font-size: 13px;
+}
+body.dark .searchable-container .searchable-items.grid .items .user-email {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+body.dark .searchable-container .searchable-items.grid .items .user-email .info-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #888ea8;
+  margin-bottom: 11px;
+}
+body.dark .searchable-container .searchable-items.grid .items .user-email p {
+  color: #bfc9d4;
+  font-size: 13px;
+  margin-bottom: 11px;
+}
+body.dark .searchable-container .searchable-items.grid .items .user-location {
+  display: flex;
+  justify-content: space-between;
+}
+body.dark .searchable-container .searchable-items.grid .items .user-location .info-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #888ea8;
+  margin-bottom: 11px;
+  margin-right: 10px;
+}
+body.dark .searchable-container .searchable-items.grid .items .user-location p {
+  color: #bfc9d4;
+  font-size: 13px;
+  margin-bottom: 11px;
+}
+body.dark .searchable-container .searchable-items.grid .items .user-phone {
+  display: flex;
+  justify-content: space-between;
+}
+body.dark .searchable-container .searchable-items.grid .items .user-phone .info-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #888ea8;
+  margin-bottom: 11px;
+}
+body.dark .searchable-container .searchable-items.grid .items .user-phone p {
+  color: #bfc9d4;
+  font-size: 13px;
+  margin-bottom: 11px;
+  margin-right: 10px;
+}
+body.dark .searchable-container .searchable-items.grid .items .action-btn {
+  font-weight: 600;
+  color: #181e2e;
+  text-align: center;
+  margin: 20px 0;
+}
+body.dark .searchable-container .searchable-items.grid .items .action-btn .edit, body.dark .searchable-container .searchable-items.grid .items .action-btn .delete {
+  margin-right: 5px;
+  cursor: pointer;
+  color: #bfc9d4;
+  width: 20px;
+  fill: rgba(27, 85, 226, 0.2392156863);
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  body.dark {
+    /* IE10+ CSS styles go here */
+  }
+  body.dark .new-control.new-checkbox .new-control-indicator {
+    top: -13px;
+    left: -8px;
+  }
+}
+@media (max-width: 1199px) {
+  body.dark .searchable-container .searchable-items.list {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  body.dark .searchable-container .searchable-items.grid .items {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+}
+@media (max-width: 767px) {
+  body.dark .searchable-container .searchable-items.list {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  body.dark .searchable-container .searchable-items.list .items {
+    min-width: 767px;
+  }
+  body.dark .searchable-container .searchable-items.grid .items {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media (max-width: 575px) {
+  body.dark .searchable-container .searchable-items.grid .items {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  body.dark .filtered-list-search form > div {
+    width: 100%;
+  }
+}

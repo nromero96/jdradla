@@ -1,0 +1,95 @@
+/*
+	===============================
+			@Import	Function
+	===============================
+*/
+/*
+	===============================
+			@Import	Mixins
+	===============================
+*/
+.autoComplete_wrapper {
+  display: block;
+}
+.autoComplete_wrapper > input {
+  height: 3rem;
+  width: 100%;
+  margin: 0;
+  padding: 0 2rem 0 2rem;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-size: 1rem;
+  text-overflow: ellipsis;
+  color: #3b3f5c;
+  outline: none;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: none;
+  border: 1px solid #bfc9d4;
+}
+.autoComplete_wrapper > input::-moz-placeholder {
+  color: #888ea8;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.autoComplete_wrapper > input::placeholder {
+  color: #888ea8;
+  transition: all 0.3s ease;
+}
+.autoComplete_wrapper > ul {
+  background-color: #fff;
+  border: 1px solid #e0e6ed;
+  border-radius: 8px;
+  overflow-y: auto;
+  box-shadow: none;
+  scrollbar-color: #1b2e4b #1b2e4b;
+  scrollbar-width: thin;
+}
+.autoComplete_wrapper > ul > li {
+  color: #1b2e4b;
+  background-color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+.autoComplete_wrapper > ul > li mark {
+  color: #00ab55;
+}
+.autoComplete_wrapper > ul .no_result {
+  font-size: 15px;
+  color: #0e1726;
+  padding: 8px 10px;
+}
+.autoComplete_wrapper:hover > ul {
+  scrollbar-color: #506690 #1b2e4b;
+  scrollbar-width: thin;
+}
+.autoComplete_wrapper ul::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.autoComplete_wrapper ul::-webkit-scrollbar-track-piece {
+  background-color: #1b2e4b;
+}
+.autoComplete_wrapper ul::-webkit-scrollbar-thumb:vertical {
+  height: 30px;
+  background-color: #1b2e4b;
+  border-radius: 2px;
+}
+.autoComplete_wrapper:hover > ul::-webkit-scrollbar-thumb:vertical {
+  height: 30px;
+  background-color: #506690;
+}
+
+.autocomplete-btn {
+  position: relative;
+  display: block;
+}
+.autocomplete-btn .btn {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  letter-spacing: 1px;
+  transform: translateY(0);
+  box-shadow: none;
+}

@@ -1,0 +1,25 @@
+/*
+	===============================
+			@Import	Function
+	===============================
+*/
+/*
+	===============================
+			@Import	Mixins
+	===============================
+*/
+body.dark .apexcharts-canvas {
+  margin: 0 auto;
+}
+body.dark .apexcharts-title-text, body.dark .apexcharts-yaxis-label, body.dark .apexcharts-xaxis-label {
+  fill: #e0e6ed;
+}
+body.dark .apexcharts-legend-text {
+  color: #e0e6ed !important;
+}
+body.dark .apexcharts-radialbar-track.apexcharts-track .apexcharts-radialbar-area {
+  stroke: #191e3a;
+}
+body.dark .apexcharts-pie-label, body.dark .apexcharts-datalabel, body.dark .apexcharts-datalabel-label, body.dark .apexcharts-datalabel-value {
+  fill: #bfc9d4;
+}
