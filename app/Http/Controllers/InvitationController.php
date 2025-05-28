@@ -91,7 +91,7 @@ class InvitationController extends Controller
         $fechaactual = 'Lima, ' . $fechaactual;
 
         $content = <<<EOD
-            <p style="font-size:15px;text-align:center; color:#c40000;"><img src="{$logo}" alt="logo" width="280" height="47" /><br><b style="color:red;font-size:18px;text-align:center;">JD RADLA 2025</b><br><b style="color:blue;font-size:14px;text-align:center;">JORNADA DESCENTRALIZADA RADLA - SOCIEDAD MÉDICA CÍRCULO DERMATOLÓGICO DEL PERÚ 2025</b><br><b style="color:#000;font-size:11px;text-align:center;">Edición Presencial</b><br><b style="color:#000;font-size:12px;text-align:center;">Hotel Costa del Sol, Golf Trujillo - Sábado 11 de octubre de 2025</b><br></p>
+            <p style="font-size:15px;text-align:center; color:#c40000;"><img src="{$logo}" alt="logo" width="280" height="47" /><br><b style="color:red;font-size:18px;text-align:center;">Jornada RADLA-CIDERM Trujillo</b><br><b style="color:blue;font-size:14px;text-align:center;">JORNADA DESCENTRALIZADA RADLA - SOCIEDAD MÉDICA CÍRCULO DERMATOLÓGICO DEL PERÚ 2025</b><br><b style="color:#000;font-size:11px;text-align:center;">Edición Presencial</b><br><b style="color:#000;font-size:12px;text-align:center;">Hotel Costa del Sol, Golf Trujillo - Sábado 11 de octubre de 2025</b><br></p>
             <p>{$fechaactual}</p>
             <br>
             <p>Señor(a) Doctor(a)</p>
@@ -115,7 +115,7 @@ class InvitationController extends Controller
             <p></p>
             <p></p>
             <p></p>
-            <p style="font-size:9px;text-align:center;"><i><u>Nota:</u> Esta invitación es exclusiva para inscribirse en JD RADLA 2025 y no incluye gastos de viaje a Perú: pasaje aéreo, hospedaje o traslados en Lima.</i></p>
+            <p style="font-size:9px;text-align:center;"><i><u>Nota:</u> Esta invitación es exclusiva para inscribirse en Jornada RADLA-CIDERM Trujillo y no incluye gastos de viaje a Perú: pasaje aéreo, hospedaje o traslados en Lima.</i></p>
             <p></p>
             <p></p>
             <p></p>

@@ -12,9 +12,9 @@
                 <div class="card mb-3 mb-sm-3">
                     <div class="card-body">
                         <h5 class="card-title">{{__("Hola,")}} <b>{{ Auth::user()->name }}</b></h5>
-                        <p class="card-text">{{__("JD RADLA 2025")}}</p>
+                        <p class="card-text">{{__("JORNADA DESCENTRALIZADA RADLA - CIDERM PERU / Trujillo")}}</p>
                         
-                        @if($myinscription)
+                        {{-- @if($myinscription)
                             <a href="{{ route('gafetes.gafeteforparticipant',$myinscription->id) }}" class="btn btn-primary px-2 py-1" target="_blank">
                                 <svg width="21" height="21" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M21 5H3a1 1 0 0 0-1 1v3.5h.6a2.5 2.5 0 0 1 0 5H2V18a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1v-3.5h-.1a2.5 2.5 0 0 1 0-5h.1V6a1 1 0 0 0-1-1Z"></path>
@@ -34,7 +34,7 @@
 
                         @else
                             <a href="#" class="btn btn-alert" disabled>{{__("Solapín no disponible. Sin inscripción o pago.")}}</a>
-                        @endif
+                        @endif --}}
 
                     </div>
                 </div>

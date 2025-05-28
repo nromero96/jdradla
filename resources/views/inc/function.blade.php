@@ -7,7 +7,7 @@ if (!function_exists('setTitle')) :
 
         // echo $page_name;
 
-        $admin_name = ' | JD RADLA 2025';
+        $admin_name = ' | Jornada RADLA-CIDERM Trujillo';
 
         if ($page_name === 'dashboard') :
             echo __('Dashboard') . $admin_name;

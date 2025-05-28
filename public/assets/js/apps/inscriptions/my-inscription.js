@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return false;
         }
 
-        const categoriasPermitidas = ['3'];
+        const categoriasPermitidas = ['1','2','3','4'];
 
         if (categoriasPermitidas.includes(selectedRadioCategoryInscription.value)) {
             if (!validarArchivoFilePond('document_file', "Debe adjuntar documento probatorio de categoría (Título, Constancia, Carnet profesional).")) {
@@ -155,7 +155,7 @@ const dvDocumentFile = document.getElementById('dv_document_file');
 const inputDocumentFile = document.getElementById('document_file');
 const dvSpecialCode = document.getElementById('dv_specialcode');
 const inputSpecialCode = document.getElementById('specialcode');
-const txtPriceSpecialCode = document.getElementById('dc_price_5');
+const txtPriceSpecialCode = document.getElementById('dc_price_4');
 const btnValidateSpecialCode = document.getElementById('validate_specialcode');
 const btnClearSpecialCode = document.getElementById('clear_specialcode');
 const specialCodeVerify = document.getElementById('specialcode_verify');
@@ -194,7 +194,7 @@ function handleCategoryRadioButtons(){
     }
 
 
-    if(selectedValueCategory === '3'){
+    if(selectedValueCategory === '1' || selectedValueCategory === '2' || selectedValueCategory === '3'){
 
       //Document file required
       dvDocumentFile.classList.remove('d-none');
@@ -211,28 +211,11 @@ function handleCategoryRadioButtons(){
       btnValidateSpecialCode.classList.remove('d-none');
       btnClearSpecialCode.classList.add('d-none');
 
-    }else if(selectedValueCategory === '1' || selectedValueCategory === '2'){
-
-        //Document file not required
-        dvDocumentFile.classList.add('d-none');
-        inputDocumentFile.removeAttribute('required');
-
-        //Special code required not validation
-        dvSpecialCode.classList.add('d-none');
-        inputSpecialCode.value = '';
-        inputSpecialCode.removeAttribute('required');
-        inputSpecialCode.removeAttribute('readonly');
-        txtPriceSpecialCode.textContent = '00';
-        descriptionSpecialCode.textContent = '';
-        specialCodeVerify.value = '';
-        btnValidateSpecialCode.classList.remove('d-none');
-        btnClearSpecialCode.classList.add('d-none');
-
-      } else if(selectedValueCategory === '4'){
+    }else if(selectedValueCategory === '4'){
 
         cprequired.classList.add('d-none');
 
-        //Document file not required
+        //Document file required
         dvDocumentFile.classList.remove('d-none');
         inputDocumentFile.setAttribute('required', 'required');
 

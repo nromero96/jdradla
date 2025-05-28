@@ -10,7 +10,7 @@
                     </a>
                 </div>
                 <div class="nav-item theme-text text-center">
-                    <a href="{{ route('dashboard.index') }}" class="nav-link">JD RADLA</a>
+                    <a href="{{ route('dashboard.index') }}" class="nav-link">RADLA-CIDERM<small>TRUJILLO</small></a>
                 </div>
             </div>
             <div class="nav-item sidebar-toggle">

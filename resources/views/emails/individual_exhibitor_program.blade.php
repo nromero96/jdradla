@@ -68,7 +68,7 @@
 
         <p style="font-size: 14px; margin-bottom: 0px;">
             <b>COMITÉ ORGANIZADOR</b><br>
-            JD RADLA 2025<br>
+            Jornada RADLA-CIDERM Trujillo<br>
             <u>www.cidermperu.org</u>
         </p>
     </div>
