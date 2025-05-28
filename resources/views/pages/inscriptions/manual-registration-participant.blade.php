@@ -138,7 +138,7 @@
                                                                 </label>
                                                             </div>
 
-                                                            @if ($category->id == '5')
+                                                            @if ($category->id == '4')
                                                             <div id="dv_specialcode" class="d-none">
                                                                 <div class="d-sm-inline-block">
                                                                     <div class="input-group mt-1 mb-0">
@@ -237,7 +237,7 @@
 
                             </div>
 
-                            <div class="col-md-12">
+                            <div class="col-md-12 d-none">
                                 <div class="card px-3 py-3">
                                     <label for="" class="form-label fw-bold">
                                         {{ __('¿Necesita Factura?') }}
@@ -272,7 +272,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-12">
+                            <div class="col-md-12 d-none">
                                 <div class="card px-3 py-3">
                                     <label for="" class="form-label fw-bold text-center">{{ __('FORMA DE PAGO') }}</label>
 
@@ -296,12 +296,7 @@
                                     </div>
 
                                     <div id="dv_tranfer" class="mt-3">
-                                        <p class="text-center"><img src="{{ asset('assets/img/scotiabank.png') }}" style="width: 180px;border-radius: 10px;"></p>
-                                        <p class="text-center">
-                                            <b>Cta. Cte. Dólares:</b> 0002920669<br>
-                                            <b>CCI:</b> 009-043-000002920669-15<br>
-                                            <b>Código SWIFT:</b> BSUDPEPL<br>
-                                        </p>
+                                        
                                         <div class="row">
                                             <div class="col-md-2"></div>
                                             <div class="col-md-8">

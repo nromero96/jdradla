@@ -46,7 +46,7 @@
                         <div class="auth-overlay" style="background-image: url({{asset('assets/img/bg-lg-1-min.jpg')}});background-size: cover;"></div>
                         <div class="auth-cover">
                             <div class="position-relative">
-                                <h2 class="mt-5 text-white px-2" style="font-weight: bold;">{{__('JORNADA DESCENTRALIZADAS RADLA - SOCIEDAD MÉDICA CÍRCULO DERMATOLÓGICO DEL PERÚ 2025')}}</h2>
+                                <h2 class="mt-5 text-white px-2" style="font-weight: bold;">{{__('JORNADA DESCENTRALIZADA RADLA - SOCIEDAD MÉDICA CÍRCULO DERMATOLÓGICO DEL PERÚ 2025')}}</h2>
                                 <p class="text-white">{{ __('Hotel Costa del Sol, Golf Trujillo - Sábado 11 de octubre de 2025') }}</p>
                             </div>
                         </div>

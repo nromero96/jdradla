@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return false;
         }
 
-        const categoriasPermitidas = ['1', '2', '3', '4','5','6'];
+        const categoriasPermitidas = ['1', '2', '3', '4'];
 
         if (categoriasPermitidas.includes(selectedRadioCategoryInscription.value)) {
 
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // }
         }
 
-        if(selectedRadioCategoryInscription.value === '5' && document.getElementById('specialcode_verify').value === ''){
+        if(selectedRadioCategoryInscription.value === '4' && document.getElementById('specialcode_verify').value === ''){
             alert('Debe validar la cuota especial');
             return false;
         }
@@ -180,7 +180,7 @@ function handleCategoryRadioButtons(){
     
     const selectedValueCategory = document.querySelector('input[type="radio"][name="category_inscription_id"]:checked').value;
 
-    if(selectedValueCategory === '4'){
+    if(selectedValueCategory === '3'){
 
       //Document file required
       dvDocumentFile.classList.remove('d-none');
@@ -197,7 +197,7 @@ function handleCategoryRadioButtons(){
       btnValidateSpecialCode.classList.remove('d-none');
       btnClearSpecialCode.classList.add('d-none');
 
-    }else if(selectedValueCategory === '1' || selectedValueCategory === '2' || selectedValueCategory === '3' || selectedValueCategory === '4' || selectedValueCategory === '6'){
+    }else if(selectedValueCategory === '1' || selectedValueCategory === '2' || selectedValueCategory === '3' || selectedValueCategory === '5'){
 
         //Document file not required
         dvDocumentFile.classList.add('d-none');
@@ -214,7 +214,7 @@ function handleCategoryRadioButtons(){
         btnValidateSpecialCode.classList.remove('d-none');
         btnClearSpecialCode.classList.add('d-none');
 
-      } else if(selectedValueCategory === '5'){
+      } else if(selectedValueCategory === '4'){
 
         //Document file not required
         dvDocumentFile.classList.remove('d-none');

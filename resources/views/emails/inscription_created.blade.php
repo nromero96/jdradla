@@ -109,7 +109,7 @@
         <p>Para mayores detalles, puede contactarse con nosotros a través del e-mail <b>inscripciones@rosmarasociados.com</b></p><br>
 
         <!-- Firma y contacto del Comité Organizador -->
-        <p class="signature">Comité Organizador - Inscripciones<br><b>JORNADA DESCENTRALIZADA RADLA - CIDERM PERU / Trujillo</b><br>+51 983 481 269<br>inscripciones@rosmarasociados.com</p>
+        <p class="signature">Atentamente,<br>Comité Organizador - Inscripciones<br><b>JORNADA DESCENTRALIZADA RADLA - CIDERM PERU / Trujillo</b><br>+51 983 481 269<br>inscripciones@rosmarasociados.com</p>
     </div>
 </body>
 </html>

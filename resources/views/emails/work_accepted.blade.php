@@ -10,7 +10,7 @@
     </p>
 
     <h1 style="color: #c00000;font-size: 22px;text-align: center;line-height: 14px;font-family: arial;">
-        JORNADA DESCENTRALIZADAS RADLA - SOCIEDAD MÉDICA CÍRCULO DERMATOLÓGICO DEL PERÚ 2025
+        JORNADA DESCENTRALIZADA RADLA - SOCIEDAD MÉDICA CÍRCULO DERMATOLÓGICO DEL PERÚ 2025
         <span style="display: block; font-size: 19px; margin-top: 10px; color:black;font-weight: normal;">Hotel Costa del Sol, Golf Trujillo - Sábado 11 de octubre de 2025</span>
     </h1>
     <div style="color: rgba(255, 255, 255, 0); height: 20px;">-</div>
