@@ -194,14 +194,6 @@
                                                         <b>US$ {{ $inscription->price_category }}</b>
                                                     </td>
                                                 </tr>
-                                                <tr>
-                                                    <td>
-                                                        Acompañante
-                                                    </td>
-                                                    <td>
-                                                        <b>US$ {{ $inscription->price_accompanist }}</b>
-                                                    </td>
-                                                </tr>
                                             <tr class="table-secondary">
                                                 <td><b>Monto Total</b></td>
                                                 <td><b>US$ {{ $inscription->total }}</b></td>
@@ -289,8 +281,8 @@
                             </div>
                             @endif
 
-                            @if(!in_array($inscription->category_inscription_name, ['Cuota especial', 'Invitado', 'Dermatólogos Extranjeros']))
-                            <div class="col-md-12">
+                            @if(!in_array($inscription->category_inscription_name, ['Invitado']))
+                            <div class="col-md-12 d-none">
                                 <div class="card px-3 py-3">
                                     <label for="" class="form-label fw-bold mb-0">{{ __('Método de Pago') }}:</label>
                                     <div class="">

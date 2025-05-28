@@ -64,7 +64,7 @@
     <div class="container">
         <h2>INSCRIPCIÓN # {{ $datainscription->id }}: <span style="color:green;">Confirmado</span></h2>
         <p>Estimado(a) <b>{{ $userinfo->name }} {{ $userinfo->lastname }} {{ $userinfo->second_lastname }}</b>,</p>
-        <p>Le informamos que su inscripción para el <b>JORNADA DESCENTRALIZADAS RADLA - SOCIEDAD MÉDICA CÍRCULO DERMATOLÓGICO DEL PERÚ 2025</b> ha sido confirmado. La jornada se celebrará sábado 11 de octubre de 2025, en el Hotel Costa del Sol, Golf Trujillo.</p>
+        <p>Le informamos que su inscripción para la <b>JORNADA DESCENTRALIZADA RADLA - SOCIEDAD MÉDICA CÍRCULO DERMATOLÓGICO DEL PERÚ 2025</b> ha sido confirmado. La jornada se celebrará sábado 11 de octubre de 2025, en el Hotel Costa del Sol, Golf Trujillo.</p>
 
         <!-- Título "Detalle de tu Inscripción" -->
         <h3>Detalle de su inscripción</h3>
@@ -98,19 +98,12 @@
                 <td><b>Monto Total</b></td>
                 <td>US$ {{ $datainscription->total }}</td>
             </tr>
-
-            @if(!in_array($datainscription->category_inscription_name, ['Cuota especial', 'Invitado', 'Dermatólogos Extranjeros']))
-            <tr>
-                <td>Método de Pago</td>
-                <td>{{ $datainscription->payment_method }}</td>
-            </tr>
-            @endif
         </table>
         <!-- Fin de la tabla -->
 
         <!-- Recordatorio para ver el proceso de inscripción -->
         <p>Recuerda que puedes ver el detalle de tu inscripción en el siguiente enlace:</p>
-        <p><a href="https://jdradla.cidermperu.org/">Ver Inscripción</a></p>
+        <p><a href="https://jradlatru.cidermperu.org/">Ver Inscripción</a></p>
 
         <!-- Mensaje de validación de pago e información -->
         <p><strong style="color:green;"><em>Nos complace informarle que su inscripción ha sido confirmada exitosamente.</em><strong></p>
@@ -119,7 +112,7 @@
         <p>Para mayores detalles, puede contactarse con nosotros a través del e-mail <b>inscripciones@rosmarasociados.com</b></p><br>
 
         <!-- Firma y contacto del Comité Organizador -->
-        <p class="signature">Atentamente,<br>Inscripciones<br><b>JD RADLA 2025</b><br>+51 983 481 269<br>inscripciones@rosmarasociados.com</p>
+        <p class="signature">Comité Organizador - Inscripciones<br><b>JORNADA DESCENTRALIZADA RADLA - CIDERM PERU / Trujillo</b><br>+51 983 481 269<br>inscripciones@rosmarasociados.com</p>
     </div>
 </body>
 </html>

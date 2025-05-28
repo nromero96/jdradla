@@ -91,7 +91,7 @@ class InvitationController extends Controller
         $fechaactual = 'Lima, ' . $fechaactual;
 
         $content = <<<EOD
-            <p style="font-size:15px;text-align:center; color:#c40000;"><img src="{$logo}" alt="logo" width="280" height="47" /><br><b style="color:red;font-size:18px;text-align:center;">JD RADLA 2025</b><br><b style="color:blue;font-size:14px;text-align:center;">JORNADA DESCENTRALIZADAS RADLA - SOCIEDAD MÉDICA CÍRCULO DERMATOLÓGICO DEL PERÚ 2025</b><br><b style="color:#000;font-size:11px;text-align:center;">Edición Presencial</b><br><b style="color:#000;font-size:12px;text-align:center;">Hotel Costa del Sol, Golf Trujillo - Sábado 11 de octubre de 2025</b><br></p>
+            <p style="font-size:15px;text-align:center; color:#c40000;"><img src="{$logo}" alt="logo" width="280" height="47" /><br><b style="color:red;font-size:18px;text-align:center;">JD RADLA 2025</b><br><b style="color:blue;font-size:14px;text-align:center;">JORNADA DESCENTRALIZADA RADLA - SOCIEDAD MÉDICA CÍRCULO DERMATOLÓGICO DEL PERÚ 2025</b><br><b style="color:#000;font-size:11px;text-align:center;">Edición Presencial</b><br><b style="color:#000;font-size:12px;text-align:center;">Hotel Costa del Sol, Golf Trujillo - Sábado 11 de octubre de 2025</b><br></p>
             <p>{$fechaactual}</p>
             <br>
             <p>Señor(a) Doctor(a)</p>
@@ -99,7 +99,7 @@ class InvitationController extends Controller
             <p><strong>E-mail:</strong> {$invitation->email}</p>
             <p><strong>País:</strong> {$invitation->country}</p>
             <p>Estimado(a) colega:</p>
-            <p style="text-align: justify;">Es grato dirigirnos a usted para invitarle muy cordialmente a participar en el <b>JORNADA DESCENTRALIZADAS RADLA - SOCIEDAD MÉDICA CÍRCULO DERMATOLÓGICO DEL PERÚ 2025</b> que se realizará en la ciudad de Trujillo, sábado 11 de octubre de 2025 en las instalaciones del Hotel Costa del Sol, Golf Trujillo.</p>
+            <p style="text-align: justify;">Es grato dirigirnos a usted para invitarle muy cordialmente a participar en el <b>JORNADA DESCENTRALIZADA RADLA - SOCIEDAD MÉDICA CÍRCULO DERMATOLÓGICO DEL PERÚ 2025</b> que se realizará en la ciudad de Trujillo, sábado 11 de octubre de 2025 en las instalaciones del Hotel Costa del Sol, Golf Trujillo.</p>
             <p style="text-align: justify;">Esperamos que esta invitación encuentre en Ud. favorable acogida que le permita disfrutar de una jornada con alta calidad científica con la presencia de destacados profesores internacionales.</p>
             <p>Hacemos propicia esta oportunidad para reiterarle nuestros más cordiales saludos.</p>
             <br>

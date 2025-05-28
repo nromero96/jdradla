@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return false;
         }
 
-        const categoriasPermitidas = ['4'];
+        const categoriasPermitidas = ['3'];
 
         if (categoriasPermitidas.includes(selectedRadioCategoryInscription.value)) {
             if (!validarArchivoFilePond('document_file', "Debe adjuntar documento probatorio de categoría (Título, Constancia, Carnet profesional).")) {
@@ -50,15 +50,15 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         if(selectedRadioPaymentMethod.value === 'Transferencia/Depósito') {
-          const exemptCategories = ['1', '2', '4'];
+          const exemptCategories = ['1', '2', '3'];
           if (exemptCategories.includes(selectCategoryRadioButtons.value)) {
-              if (!validarArchivoFilePond('voucher_file', "Debe adjuntar un comprobante de transferencia o depósito")) {
-                  return false;
-              }
+              // if (!validarArchivoFilePond('voucher_file', "Debe adjuntar un comprobante de transferencia o depósito")) {
+              //     return false;
+              // }
           }
         }
 
-        if(selectedRadioCategoryInscription.value === '5' && document.getElementById('specialcode_verify').value === ''){
+        if(selectedRadioCategoryInscription.value === '4' && document.getElementById('specialcode_verify').value === ''){
             alert('Debe validar la cuota especial');
             return false;
         }
@@ -171,15 +171,14 @@ function handleCategoryRadioButtons(){
 
     //Mostrar divs que se necesitan
     dvDocumentFile.classList.remove('d-none');
-    dv_invoice.classList.remove('d-none');
     dv_payment.classList.remove('d-none');
 
-    const isCpRequiredHidden = selectedValueCategory === '1' || selectedValueCategory === '2' || selectedValueCategory === '4';
+    const isCpRequiredHidden = selectedValueCategory === '10';
 
     const cprequired = document.getElementById('cprequired');
 
 
-    if(selectedValueCategory === '3'){
+    if(selectedValueCategory === '1' || selectedValueCategory === '2' || selectedValueCategory === '3' || selectedValueCategory === '4' || selectedValueCategory === '5'){
       dv_payment.classList.add('d-none');
       dv_sms_extranjero.classList.remove('d-none');
     }else{
@@ -195,7 +194,7 @@ function handleCategoryRadioButtons(){
     }
 
 
-    if(selectedValueCategory === '4'){
+    if(selectedValueCategory === '3'){
 
       //Document file required
       dvDocumentFile.classList.remove('d-none');
@@ -212,7 +211,7 @@ function handleCategoryRadioButtons(){
       btnValidateSpecialCode.classList.remove('d-none');
       btnClearSpecialCode.classList.add('d-none');
 
-    }else if(selectedValueCategory === '1' || selectedValueCategory === '2' || selectedValueCategory === '3' || selectedValueCategory === '6'){
+    }else if(selectedValueCategory === '1' || selectedValueCategory === '2'){
 
         //Document file not required
         dvDocumentFile.classList.add('d-none');
@@ -229,7 +228,7 @@ function handleCategoryRadioButtons(){
         btnValidateSpecialCode.classList.remove('d-none');
         btnClearSpecialCode.classList.add('d-none');
 
-      } else if(selectedValueCategory === '5'){
+      } else if(selectedValueCategory === '4'){
 
         cprequired.classList.add('d-none');
 

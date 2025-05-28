@@ -133,11 +133,11 @@ class GafeteController extends Controller
         EOD;
 
         $pdf = new TCPDF();
-        $pdf->SetCreator('JORNADA DESCENTRALIZADAS RADLA - SOCIEDAD MÉDICA CÍRCULO DERMATOLÓGICO DEL PERÚ 2025');
-        $pdf->SetAuthor('JORNADA DESCENTRALIZADAS RADLA - SOCIEDAD MÉDICA CÍRCULO DERMATOLÓGICO DEL PERÚ 2025');
+        $pdf->SetCreator('JORNADA DESCENTRALIZADA RADLA - SOCIEDAD MÉDICA CÍRCULO DERMATOLÓGICO DEL PERÚ 2025');
+        $pdf->SetAuthor('JORNADA DESCENTRALIZADA RADLA - SOCIEDAD MÉDICA CÍRCULO DERMATOLÓGICO DEL PERÚ 2025');
         $pdf->SetTitle('GAFETE: '.$inscriptions->id.'-'. $inscriptions->solapin_name);
         $pdf->SetSubject('GAFETE: '.$inscriptions->id.'-'. $inscriptions->solapin_name);
-        $pdf->SetKeywords('GAFETE, JORNADA DESCENTRALIZADAS RADLA - SOCIEDAD MÉDICA CÍRCULO DERMATOLÓGICO DEL PERÚ 2025, Hotel Costa del Sol, Golf Trujillo - Sábado 11 de octubre de 2025');
+        $pdf->SetKeywords('GAFETE, JORNADA DESCENTRALIZADA RADLA - SOCIEDAD MÉDICA CÍRCULO DERMATOLÓGICO DEL PERÚ 2025, Hotel Costa del Sol, Golf Trujillo - Sábado 11 de octubre de 2025');
         $pdf->SetAutoPageBreak(TRUE, 0);
         $pdf->setPrintHeader(false);
         $pdf->setPrintFooter(false);
@@ -351,11 +351,11 @@ class GafeteController extends Controller
                 ->get();
 
         $pdf = new TCPDF();
-        $pdf->SetCreator('JORNADA DESCENTRALIZADAS RADLA - SOCIEDAD MÉDICA CÍRCULO DERMATOLÓGICO DEL PERÚ 2025');
-        $pdf->SetAuthor('JORNADA DESCENTRALIZADAS RADLA - SOCIEDAD MÉDICA CÍRCULO DERMATOLÓGICO DEL PERÚ 2025');
+        $pdf->SetCreator('JORNADA DESCENTRALIZADA RADLA - SOCIEDAD MÉDICA CÍRCULO DERMATOLÓGICO DEL PERÚ 2025');
+        $pdf->SetAuthor('JORNADA DESCENTRALIZADA RADLA - SOCIEDAD MÉDICA CÍRCULO DERMATOLÓGICO DEL PERÚ 2025');
         $pdf->SetTitle('Lista de Gafetes');
         $pdf->SetSubject('Lista de Gafetes');
-        $pdf->SetKeywords('Lista de Gafetes, JORNADA DESCENTRALIZADAS RADLA - SOCIEDAD MÉDICA CÍRCULO DERMATOLÓGICO DEL PERÚ 2025, Hotel Costa del Sol, Golf Trujillo - Sábado 11 de octubre de 2025');
+        $pdf->SetKeywords('Lista de Gafetes, JORNADA DESCENTRALIZADA RADLA - SOCIEDAD MÉDICA CÍRCULO DERMATOLÓGICO DEL PERÚ 2025, Hotel Costa del Sol, Golf Trujillo - Sábado 11 de octubre de 2025');
         
         $pdf->AddPage();
 

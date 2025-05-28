@@ -186,7 +186,7 @@
                                                     }
                                                 @endphp
 
-                                                @if ($category->type == 'radio' && $category->status == 'active' && $category->id != '6')
+                                                @if ($category->type == 'radio' && $category->status == 'active' && $category->id != '5')
                                                     <tr>
                                                         <td>
                                                             <div class="form-check form-check-primary me-1">
@@ -196,7 +196,7 @@
                                                                 </label>
                                                             </div>
 
-                                                            @if ($category->id == '5')
+                                                            @if ($category->id == '4')
                                                             <div id="dv_specialcode" class="d-none">
                                                                 <div class="d-sm-inline-block">
                                                                     <div class="input-group mt-1 mb-0">
@@ -281,7 +281,7 @@
 
                             </div>
 
-                            <div class="col-md-12" id="dv_invoice">
+                            <div class="col-md-12 d-none" id="dv_invoice">
                                 <div class="card px-3 py-3">
                                     <label for="" class="form-label fw-bold">
                                         {{ __('¿Necesita Factura?') }}
@@ -316,13 +316,11 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-12" id="dv_payment">
+                            <div class="col-md-12 d-none" id="dv_payment">
                                 <div class="card px-3 py-3">
                                     <label for="" class="form-label fw-bold text-center">{{ __('FORMA DE PAGO') }}</label>
 
                                     <div class="text-center">
-
-                                        <p class="text-center">BENEFICIARIO: <b>CÍRCULO DERMATOLÓGICO DEL PERÚ</b> - <b>RUC 20258221371</b></p>
 
                                         <div class="form-check form-check-primary form-check-inline">
                                             <input class="form-check-input cursor-pointer" type="radio" name="payment_method" value="Transferencia/Depósito" id="payment_method_transfer" checked>
@@ -341,36 +339,6 @@
                                     </div>
 
                                     <div id="dv_tranfer" class="mt-3">
-                                        <div class="row border-bottom border-top mx-0 mx-sm-5 py-2">
-                                            <div class="col-md-3">
-                                                <img src="{{ asset('assets/img/bcp-logo.png') }}" style="width: 100px;border-radius: 10px;">
-                                            </div>
-                                            <div class="col-md-3">
-                                                <b>Cta. Cte. Dólares:</b><br>193-7134991-1-24
-                                            </div>
-                                            <div class="col-md-4">
-                                                <b>CCI:</b><br>002-193-007134991124-19
-                                            </div>
-                                            <div class="col-md-2">
-                                                <b>Código SWIFT:</b><br>BCPLPEPL
-                                            </div>
-                                        </div>
-
-                                        <div class="row border-bottom mx-0 mx-sm-5 py-2 mb-3">
-                                            <div class="col-md-3">
-                                                <img src="{{ asset('assets/img/scotiabank.png') }}" style="width: 130px;border-radius: 10px;">
-                                            </div>
-                                            <div class="col-md-3">
-                                                <b>Cta. Cte. Dólares:</b><br>0002920669
-                                            </div>
-                                            <div class="col-md-4">
-                                                <b>CCI:</b><br>009-043-000002920669-15
-                                            </div>
-                                            <div class="col-md-2">
-                                                <b>Código SWIFT:</b><br>BSUDPEPL
-                                            </div>
-                                        </div>
-
                                         <div class="row">
                                             <div class="col-md-2"></div>
                                             <div class="col-md-8">
@@ -395,8 +363,8 @@
                             </div>
                             
                             <div class="col-md-12 d-none" id="sms_extranjero">
-                                <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                                    <strong>{{__("Nota:")}}</strong> Escríbenos a <b>inscripciones@rosmarasociados.com</b> para completar tu inscripción. Al enviar este formulario, recibirás un correo con los detalles de tu preinscripción.
+                                <div class="alert alert-warning alert-dismissible fade show text-center" role="alert">
+                                    <strong>{{__("Nota:")}}</strong> Su información será validada y, una vez confirmada, recibirá un correo electrónico con la confirmación de su inscripción.
                                 </div>
                             </div>
 
