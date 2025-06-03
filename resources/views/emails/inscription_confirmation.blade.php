@@ -64,7 +64,7 @@
     <div class="container">
         <h2>INSCRIPCIÓN # {{ $datainscription->id }}: <span style="color:green;">Confirmado</span></h2>
         <p>Estimado(a) <b>{{ $userinfo->name }} {{ $userinfo->lastname }} {{ $userinfo->second_lastname }}</b>,</p>
-        <p>Le informamos que su inscripción para la <b>JORNADA DESCENTRALIZADA RADLA - SOCIEDAD MÉDICA CÍRCULO DERMATOLÓGICO DEL PERÚ 2025</b> ha sido confirmado. La jornada se celebrará sábado 11 de octubre de 2025, en el Hotel Costa del Sol, Golf Trujillo.</p>
+        <p>Le informamos que su inscripción para la <b>JORNADA DESCENTRALIZADA RADLA - SOCIEDAD MÉDICA CÍRCULO DERMATOLÓGICO DEL PERÚ 2025</b> ha sido confirmada. La jornada se celebrará el sábado 11 de octubre de 2025, en el Hotel Costa del Sol, Golf Trujillo, Calle Los Cocoteros 505 Urb El Golf, en el horario de 8:30 am a 6:30 pm.</p>
 
         <!-- Título "Detalle de tu Inscripción" -->
         <h3>Detalle de su inscripción</h3>
@@ -104,9 +104,6 @@
         <!-- Recordatorio para ver el proceso de inscripción -->
         <p>Recuerda que puedes ver el detalle de tu inscripción en el siguiente enlace:</p>
         <p><a href="https://jradlatru.cidermperu.org/">Ver Inscripción</a></p>
-
-        <!-- Mensaje de validación de pago e información -->
-        <p><strong style="color:green;"><em>Nos complace informarle que su inscripción ha sido confirmada exitosamente.</em><strong></p>
 
         <!-- Contacto de soporte -->
         <p>Para mayores detalles, puede contactarse con nosotros a través del e-mail <b>inscripciones@rosmarasociados.com</b></p><br>
