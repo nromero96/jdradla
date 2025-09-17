@@ -78,14 +78,14 @@
                       <ol class="steps">
                         <li>Ingrese su <strong>correo electrónico</strong> y <strong>contraseña</strong>, luego presione <em>Continuar</em>.</li>
                         <li>Complete su información personal (colocar nombre completo tal como se emitirá su certificado).</li>
-                        <li>En <strong>Categoría</strong>, seleccione la cuota que le corresponde y adjunte su comprobante de pago.</li>
+                        <li>En <strong>Categoría</strong>, seleccione la que le corresponde.</li>
                         <li>Si cuenta con un <strong>código especial</strong> del laboratorio, seleccione <em>CUOTA ESPECIAL</em>, ingrese el código y presione <em>VALIDAR</em>.</li>
                         <li>Presione <strong>INSCRIBIRME AHORA</strong>.</li>
                         <li>Revise su correo (y la carpeta de <em>Correos no deseados</em>) para el mensaje de <strong>Pre-confirmación</strong>.</li>
                         <li>Una vez verificada su información, recibirá un correo confirmando su inscripción.</li>
                       </ol>
                       <p style="margin-top:14px; font-weight:600; color:#b91c1c;">
-                        De no recibir su inscripción hasta el <strong>20 de setiembre</strong>, daremos por concluido su registro en el sistema de inscripciones.
+                        De no recibir su inscripción hasta el <strong>23 de setiembre</strong>, daremos por concluido su registro en el sistema de inscripciones.
                       </p>
                       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-top:18px;">
                         <tr>
