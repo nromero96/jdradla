@@ -52,7 +52,7 @@
                       <table role="presentation" width="100%">
                         <tr>
                           <td align="left">
-                            <img src="https://jradlatru.cidermperu.org/logo-mail.png" width="48" height="48" alt="RADLA TRUJILLO" style="display:block; border:0; max-width:120px; height:auto;" />
+                            <img src="https://jradlatru.cidermperu.org/assets/img/logo-mail.png" width="48" height="48" alt="RADLA TRUJILLO" style="display:block; border:0; max-width:120px; height:auto;" />
                           </td>
                           <td align="right" style="text-align:right;">
                             <div class="brand">Jornada Descentralizada Trujillo 2025</div>
@@ -93,7 +93,7 @@
                             <table role="presentation" width="100%">
                               <tr>
                                 <td width="44" valign="top" style="padding-right:10px;">
-                                  <img src="https://jradlatru.cidermperu.org/assets/img/logo-mail.png" width="40" height="40" alt="Soporte" style="display:block;border-radius:8px;" />
+                                  <img src="https://jradlatru.cidermperu.org/assets/img/whatsapp.png" width="40" height="40" alt="Soporte" style="display:block;border-radius:8px;" />
                                 </td>
                                 <td valign="top" style="font-size:14px; color:#374151;">
                                   <strong>¿Necesita ayuda?</strong><br/>
