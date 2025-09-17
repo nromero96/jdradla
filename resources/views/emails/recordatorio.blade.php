@@ -10,7 +10,7 @@
       .wrapper { width:100%; background-color:#ffffff; background-image: linear-gradient(180deg, #ffffff 0%, #ffffff 100%); padding:24px 0; }
       .container { width:100%; max-width:600px; margin:0 auto; }
       .card { background:#ffffff; border-radius:16px; overflow:hidden; box-shadow:0 12px 28px rgba(5,16,44,.18); }
-      .header { padding:28px 28px 16px 28px; background:linear-gradient(135deg,#0a7cff, #6236ff); color:#fff; }
+      .header { padding:28px 28px 16px 28px; background:linear-gradient(135deg,#008491, #024547); color:#fff; }
       .brand { font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans"; font-size:20px; font-weight:700; letter-spacing:.3px; }
       .subtitle { margin-top:6px; font-size:14px; opacity:.9; }
       .content { padding:28px; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans"; color:#1c2430; line-height:1.6; font-size:15px; }
@@ -93,7 +93,7 @@
                             <table role="presentation" width="100%">
                               <tr>
                                 <td width="44" valign="top" style="padding-right:10px;">
-                                  <img src="https://jradlatru.cidermperu.org/assets/img/whatsapp.png" width="40" height="40" alt="Soporte" style="display:block;border-radius:8px;" />
+                                  <img src="https://jradlatru.cidermperu.org/assets/img/logo-mail.png" width="40" height="40" alt="Soporte" style="display:block;border-radius:8px;" />
                                 </td>
                                 <td valign="top" style="font-size:14px; color:#374151;">
                                   <strong>¿Necesita ayuda?</strong><br/>
