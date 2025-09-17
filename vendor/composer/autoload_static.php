@@ -363,8 +363,8 @@ class ComposerStaticInitfe89c9bc057a6be298f3bb7f44ad24dc
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -657,6 +657,7 @@ class ComposerStaticInitfe89c9bc057a6be298f3bb7f44ad24dc
         'App\\Mail\\InvitationEmail' => __DIR__ . '/../..' . '/app/Mail/InvitationEmail.php',
         'App\\Mail\\PruebaCorreo' => __DIR__ . '/../..' . '/app/Mail/PruebaCorreo.php',
         'App\\Mail\\QuotationCreated' => __DIR__ . '/../..' . '/app/Mail/QuotationCreated.php',
+        'App\\Mail\\RecordatorioInscripcionMail' => __DIR__ . '/../..' . '/app/Mail/RecordatorioInscripcionMail.php',
         'App\\Mail\\WorkAccepted' => __DIR__ . '/../..' . '/app/Mail/WorkAccepted.php',
         'App\\Mail\\WorkCreatedMail' => __DIR__ . '/../..' . '/app/Mail/WorkCreatedMail.php',
         'App\\Models\\Accompanist' => __DIR__ . '/../..' . '/app/Models/Accompanist.php',
@@ -683,6 +684,7 @@ class ComposerStaticInitfe89c9bc057a6be298f3bb7f44ad24dc
         'App\\Models\\ProgramSession' => __DIR__ . '/../..' . '/app/Models/ProgramSession.php',
         'App\\Models\\Quotation' => __DIR__ . '/../..' . '/app/Models/Quotation.php',
         'App\\Models\\QuotationDocument' => __DIR__ . '/../..' . '/app/Models/QuotationDocument.php',
+        'App\\Models\\ReminderLog' => __DIR__ . '/../..' . '/app/Models/ReminderLog.php',
         'App\\Models\\Service' => __DIR__ . '/../..' . '/app/Models/Service.php',
         'App\\Models\\Servicecategory' => __DIR__ . '/../..' . '/app/Models/Servicecategory.php',
         'App\\Models\\SpecialCode' => __DIR__ . '/../..' . '/app/Models/SpecialCode.php',

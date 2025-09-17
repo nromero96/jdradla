@@ -26,7 +26,6 @@
                                     </select>
                                 </div>
                                 <div class="col-md-5 align-self-center">
-                                    <a href="{{ route('users.unenrolled') }}" class="btn btn-outline-danger">Sin Inscripción</a>
                                     <a href="{{ route('users.create') }}" class="btn btn-secondary">Añadir Nuevo</a>
                                 </div>
                                 <div class="col-md-4 align-self-center text-end">
@@ -47,8 +46,9 @@
                                         <th scope="col">{{__("ID")}}</th>
                                         <th scope="col">{{__("Nombre")}}</th>
                                         <th scope="col">{{__("Rol")}}</th>
-                                        <th scope="col">{{__("Fecha")}}</th>
+                                        <th scope="col">{{__("Fecha Registro")}}</th>
                                         <th class="text-center" scope="col">{{__("Estado")}}</th>
+                                        <th class="col">Mail</th>
                                         <th class="text-center" scope="col"></th>
                                     </tr>
                                 </thead>
@@ -70,28 +70,39 @@
                                             <td>
                                                 @if(!empty($item->getRoleNames()))
                                                     @foreach($item->getRoleNames() as $v)
-                                                    <p class="mb-0 fw-bold">{{ $v }}</p>
+                                                    <small class="mb-0">{{ $v }}</small>
                                                     @endforeach
                                                 @endif
                                             </td>
-                                            <td>{{ date('d-m-Y', strtotime($item->created_at)) }}</td>
+                                            
+                                            <td>
+                                                <small class="mb-0">{{ date('d-m-Y H:i', strtotime($item->created_at)) }}</small>
+                                                <br>
+                                                @php
+                                                    $registro = \Carbon\Carbon::parse($item->created_at);
+                                                    $horas = $registro->diffInHours(now());
+                                                @endphp
+
+                                                @if ($horas < 24)
+                                                    <span class="badge badge-light-info">hace {{ $horas }} {{ Str::plural('hora', $horas) }}</span>
+                                                @else
+                                                    <span class="badge badge-light-info">hace {{ $registro->diffInDays(now()) }} {{ Str::plural('día', $registro->diffInDays(now())) }}</span>
+                                                @endif
+                                            </td>
+
                                             <td class="text-center">
                                                 <span class="badge {{$item->status == 'active' ? 'badge-light-success' : 'badge-light-danger'}} text-capitalize">{{$item->status}}</span>
                                             </td>
                                             <td class="text-center">
-                                                <form class="deleteForm" action="{{ route('users.destroy', $item->id) }}" method="POST">
+                                                {{ $item->reminder_logs_count }}
+                                            </td>
+                                            <td class="text-center">
+                                                <form action="{{ route('users-unenrolled.enviar-recordatorio', $item->id) }}" method="POST">
                                                     @csrf
-                                                    @method('DELETE')
-                                                    <div class="action-btns">
-                                                        <a href="{{ route('users.edit', $item->id) }}" class="action-btn btn-edit bs-tooltip me-2" data-toggle="tooltip" data-placement="top" title="{{ __("Editar") }}">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg>
-                                                        </a>
-                                                        @if(\Auth::user()->hasRole('Administrador') || \Auth::user()->hasRole('Secretaria'))
-                                                        <button type="button" class="action-btn border-0 bg-transparent btn-delete bs-tooltip" data-toggle="tooltip" data-placement="top" title="{{ __("Eliminar") }}">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
-                                                        </button>
-                                                        @endif
-                                                    </div>
+                                                    <button type="submit" class="btn btn-sm btn-primary"
+                                                        onclick="return confirm('¿Enviar recordatorio a {{ $item->name }}?')">
+                                                        Enviar recordatorio
+                                                    </button>
                                                 </form>
                                             </td>
                                         </tr>

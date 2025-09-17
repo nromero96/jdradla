@@ -62,4 +62,17 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+
+    public function inscriptions()
+    {
+        return $this->hasMany(Inscription::class, 'user_id');
+    }
+
+
+    public function reminderLogs()
+    {
+        return $this->hasMany(ReminderLog::class);
+    }
+
 }
