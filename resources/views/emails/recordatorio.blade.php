@@ -77,6 +77,7 @@
                       <p style="margin:0 0 8px 0; font-weight:600;">Pasos para finalizar su inscripción:</p>
                       <ol class="steps">
                         <li>Ingrese su <strong>correo electrónico</strong> y <strong>contraseña</strong>, luego presione <em>Continuar</em>.</li>
+                        <li>Si no recuerda su contraseña,  marcar <a href="https://jradlatru.cidermperu.org/password/reset" target="_blank" rel="noopener"><b>¿Olvidó su contraseña?</b></a> y seguir las instrucciones.</li>
                         <li>Complete su información personal (colocar nombre completo tal como se emitirá su certificado).</li>
                         <li>En <strong>Categoría</strong>, seleccione la que le corresponde.</li>
                         <li>Si cuenta con un <strong>código especial</strong> del laboratorio, seleccione <em>CUOTA ESPECIAL</em>, ingrese el código y presione <em>VALIDAR</em>.</li>
