@@ -29,6 +29,6 @@ class RecordatorioInscripcionMail extends Mailable
     public function build()
     {
         return $this->view('emails.recordatorio')
-        ->subject('Complete su inscripción a la Jornada Descentralizada Trujillo 2025');
+        ->subject('Complete su inscripción a la Jornada Descentralizada RADLA Trujillo 2025');
     }
 }

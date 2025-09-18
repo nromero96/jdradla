@@ -38,7 +38,7 @@
   </head>
   <body>
     <div style="display:none; overflow:hidden; line-height:1; max-height:0; max-width:0; opacity:0; mso-hide:all;">
-      Complete su inscripción a la Jornada Descentralizada Trujillo 2025.
+      Complete su inscripción a la Jornada Descentralizada RADLA Trujillo 2025
     </div>
     <table role="presentation" class="wrapper" width="100%" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
       <tr>
@@ -55,7 +55,7 @@
                             <img src="https://jradlatru.cidermperu.org/assets/img/logo-mail.png" width="48" height="48" alt="RADLA TRUJILLO" style="display:block; border:0; max-width:120px; height:auto;" />
                           </td>
                           <td align="right" style="text-align:right;">
-                            <div class="brand">Jornada Descentralizada Trujillo 2025</div>
+                            <div class="brand">Jornada Descentralizada RADLA Trujillo 2025</div>
                             <div class="subtitle">Sistema de Inscripciones</div>
                           </td>
                         </tr>
@@ -66,7 +66,7 @@
                     <td class="content">
                       <h1 class="h1">Complete su inscripción</h1>
                       <p class="lead">
-                        Hemos verificado que creó su usuario en el sistema de inscripciones de la <strong>Jornada Descentralizada Trujillo 2025</strong>, pero aún no ha finalizado su inscripción.
+                        Hemos verificado que creó su usuario en el sistema de inscripciones de la <strong>Jornada Descentralizada RADLA Trujillo 2025</strong>, pero aún no ha finalizado su inscripción.
                       </p>
                       <div style="margin:18px 0 8px 0;">
                         <a class="btn" href="https://jradlatru.cidermperu.org/" target="_blank" rel="noopener">Completar inscripción</a>
@@ -112,7 +112,7 @@
                   </tr>
                   <tr>
                     <td class="footer">
-                      <p style="margin:0;">© 2025 Comité Organizador – Jornada Descentralizada Trujillo 2025</p>
+                      <p style="margin:0;">© 2025 Comité Organizador – Jornada Descentralizada RADLA Trujillo 2025</p>
                       <p style="margin:8px 0 0 0;">Este es un mensaje automatizado. Si ya completó su inscripción, puede ignorar este correo.</p>
                       <div class="social" style="margin:12px 0 24px 0;">
                         -
