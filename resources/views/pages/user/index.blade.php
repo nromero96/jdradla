@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var deleteButton = form.querySelector('.btn-delete');
         deleteButton.addEventListener('click', function(event) {
             event.preventDefault();
-            if (confirm("{{ __('Are you sure you want to delete this user?') }}")) {
+            if (confirm("{{ __('¿Estás seguro que deseas eliminar este usuario?') }}")) {
                 form.submit();
             }
         });

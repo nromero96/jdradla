@@ -71,7 +71,8 @@ class ExporInscriptions implements FromCollection, WithHeadings, WithMapping, Wi
             'Whatsapp',
             'Email',
             'Centro de trabajo',
-            'Solapín',
+            'Solapín Nombre',
+            'Solapín Apellido',
             'Categoria',
             'Código Especial',
             'Precio Categoria',
@@ -87,6 +88,13 @@ class ExporInscriptions implements FromCollection, WithHeadings, WithMapping, Wi
 
     public function map($inscription): array
     {
+
+        // Separa el solapin_name en partes
+        $partes = explode(' ', trim($inscription->solapin_name));
+
+        $soloNombre = $partes[0] ?? ''; // primer elemento (nombre)
+        $soloApellido = $partes[1] ?? ''; // segundo elemento (apellido)
+
         return [
             $inscription->id,
             $inscription->name,
@@ -103,7 +111,10 @@ class ExporInscriptions implements FromCollection, WithHeadings, WithMapping, Wi
             $inscription->whatsapp_code.' '.$inscription->whatsapp_number,
             $inscription->email,
             $inscription->workplace,
-            $inscription->solapin_name,
+
+            $soloNombre,   // columna para el nombre del solapin
+            $soloApellido, // columna para el apellido del solapin
+
             $inscription->category,
             $inscription->special_code,
             $inscription->price_category,
